@@ -26,7 +26,10 @@
         <input type="checkbox" name="check" id="check" />
         <ul>
           <li><a href="#home" onclick="closeMenu()">Home</a></li>
+          <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+          <li><a href="#education" onclick="closeMenu()">Education</a></li>
           <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -38,15 +41,17 @@
             I'm <span>Felix Jhonata<br/>a</span> Mobile & Frontend Developer
           </h1>
           <p class="description">
-            Welcome to my developer portfolio! I'm Felix, a motivated student with 
-            a passion for software development. While I'm still honing my skills, 
-            I'm eager to learn and create innovative solutions. I'm excited about the 
-            potential of technology to make a positive impact and am actively seeking 
-            opportunities to grow in this field.
+            Welcome to my portfolio! I'm Felix, passionate about building responsive 
+            web applications and user-centric mobile experiences. I'm eager to tackle 
+            new challenges, turn innovative ideas into reality, and actively seek 
+            opportunities to grow and make a positive impact in the tech field.
           </p>
           <div class="action_btns">
-            <a href="https://github.com/felixjhonata" target="_blank"><img class="social_media_logo" src="asset/github.svg" alt="Github"></a>
-            <a href="https://www.linkedin.com/in/felix-jhonata-97b3492b6/" target="_blank"><img class="social_media_logo" src="asset/linkedin.svg" alt="LinkedIn"></a>
+            <a href="#" class="btn_primary" target="_blank">Download CV</a>
+            <div class="social_btns_group">
+              <a href="https://github.com/felixjhonata" target="_blank" class="social_btn"><img class="social_media_logo" src="asset/github.svg" alt="Github"></a>
+              <a href="https://www.linkedin.com/in/felix-jhonata-97b3492b6/" target="_blank" class="social_btn"><img class="social_media_logo" src="asset/linkedin.svg" alt="LinkedIn"></a>
+            </div>
           </div>
         </div>
         <div class="image">
@@ -55,39 +60,157 @@
       </div>
     </section>
 
+    <section id="skills">
+      <div class="skills_container">
+        <h1 class="title">SKILLS & TOOLS</h1>
+        <div class="skills_grid">
+          <div class="skill_item">
+            <i class="ri-html5-fill"></i>
+            <span>HTML & CSS</span>
+          </div>
+          <div class="skill_item">
+            <i class="ri-javascript-fill"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill_item">
+            <i class="ri-reactjs-fill"></i>
+            <span>React JS</span>
+          </div>
+          <div class="skill_item">
+            <i class="ri-smartphone-fill"></i>
+            <span>Mobile Dev</span>
+          </div>
+          <div class="skill_item">
+            <i class="ri-github-fill"></i>
+            <span>Git & GitHub</span>
+          </div>
+          <div class="skill_item">
+            <i class="ri-terminal-window-line"></i>
+            <span>CLI Tools</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="education_container">
+        <h1 class="title">EDUCATION</h1>
+        <div class="education_card">
+          <div class="edu_header">
+            <h3>University Name Here</h3>
+            <span class="edu_date">Expected 202X</span>
+          </div>
+          <p class="edu_degree">Bachelor's Degree in Computer Science / Information Technology</p>
+          <p class="edu_desc">Focusing on software engineering, web development, and mobile applications. Actively participating in tech events and hands-on projects.</p>
+        </div>
+      </div>
+    </section>
+
     <section id="projects">
       <div class="projects_container">
         <h1 class="title">PROJECTS</h1>
         <div class="project_cards">
-          <div class="row">
-            <a href="https://github.com/felixjhonata/weather_app" target="_blank" class="project_card">
-              <img src="asset/weather_app_thumbnail.png" alt="Project Thumbnail">
-              <h1>See on Github...</h1>
-            </a href="" target="_blank">
+          
+          <div class="project_card">
+            <div class="project_image">
+              <img src="asset/weather_app_thumbnail.png" alt="Weather App">
+              <div class="overlay"></div>
+            </div>
+            <div class="project_info">
+              <h3>Weather App</h3>
+              <p>A responsive application providing real-time weather forecasts and conditions.</p>
+              <div class="tech_stack">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="project_links">
+                <a href="https://github.com/felixjhonata/weather_app" target="_blank" class="btn_outline"><i class="ri-github-fill"></i> Code</a>
+                <a href="#" target="_blank" class="btn_primary btn_small"><i class="ri-external-link-line"></i> Demo</a>
+              </div>
+            </div>
+          </div>
             
-            <a href="https://github.com/felixjhonata/cloud_note_app" target="_blank" class="project_card">
-              <img src="asset/notes_app_thumbnail.png" alt="Project Thumbnail">
-              <h1>See on Github...</h1>
-            </a>
-
-            <a href="https://github.com/felixjhonata/tufind" target="_blank" class="project_card">
-              <img src="asset/tufind_thumbnail.png" alt="Project Thumbnail">
-              <h1>See on Github...</h1>
-            </a>
+          <div class="project_card">
+            <div class="project_image">
+              <img src="asset/notes_app_thumbnail.png" alt="Cloud Note App">
+              <div class="overlay"></div>
+            </div>
+            <div class="project_info">
+              <h3>Cloud Note App</h3>
+              <p>A digital notebook application to create, save, and manage your notes in the cloud.</p>
+              <div class="tech_stack">
+                <span>Tech 1</span><span>Tech 2</span>
+              </div>
+              <div class="project_links">
+                <a href="https://github.com/felixjhonata/cloud_note_app" target="_blank" class="btn_outline"><i class="ri-github-fill"></i> Code</a>
+                <a href="#" target="_blank" class="btn_primary btn_small"><i class="ri-external-link-line"></i> Demo</a>
+              </div>
+            </div>
           </div>
-          <div class="row">
-            <a href="https://github.com/felixjhonata/nextjs-calculator" target="_blank" class="project_card">
-              <img src="asset/calculator_app_thumbnail.png" alt="Project Thumbnail">
-              <h1>See on Github...</h1>
-            </a>
 
-            <a href="https://github.com/felixjhonata/prediction-app" target="_blank" class="project_card">
-              <img src="asset/prediction_app_thumbnail.png" alt="Project Thumbnail">
-              <h1>See on Github...</h1>
-            </a>
+          <div class="project_card">
+            <div class="project_image">
+              <img src="asset/tufind_thumbnail.png" alt="Tufind App">
+              <div class="overlay"></div>
+            </div>
+            <div class="project_info">
+              <h3>Tufind App</h3>
+              <p>A mobile or web application designed to help users find relevant information easily.</p>
+              <div class="tech_stack">
+                <span>Tech 1</span><span>Tech 2</span>
+              </div>
+              <div class="project_links">
+                <a href="https://github.com/felixjhonata/tufind" target="_blank" class="btn_outline"><i class="ri-github-fill"></i> Code</a>
+                <a href="#" target="_blank" class="btn_primary btn_small"><i class="ri-external-link-line"></i> Demo</a>
+              </div>
+            </div>
           </div>
-          <p class="more_projects"><a href="https://github.com/felixjhonata?tab=repositories" target="_blank">See more...</a></p>
+
+          <div class="project_card">
+            <div class="project_image">
+              <img src="asset/calculator_app_thumbnail.png" alt="NextJS Calculator">
+              <div class="overlay"></div>
+            </div>
+            <div class="project_info">
+              <h3>Next.js Calculator</h3>
+              <p>A fully functional calculator built using Next.js framework for optimal performance.</p>
+              <div class="tech_stack">
+                <span>Next.js</span><span>React</span><span>CSS</span>
+              </div>
+              <div class="project_links">
+                <a href="https://github.com/felixjhonata/nextjs-calculator" target="_blank" class="btn_outline"><i class="ri-github-fill"></i> Code</a>
+                <a href="#" target="_blank" class="btn_primary btn_small"><i class="ri-external-link-line"></i> Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project_card">
+            <div class="project_image">
+              <img src="asset/prediction_app_thumbnail.png" alt="Prediction App">
+              <div class="overlay"></div>
+            </div>
+            <div class="project_info">
+              <h3>Prediction App</h3>
+              <p>An application that utilizes data models to provide predictions and insights.</p>
+              <div class="tech_stack">
+                <span>Tech 1</span><span>Tech 2</span>
+              </div>
+              <div class="project_links">
+                <a href="https://github.com/felixjhonata/prediction-app" target="_blank" class="btn_outline"><i class="ri-github-fill"></i> Code</a>
+                <a href="#" target="_blank" class="btn_primary btn_small"><i class="ri-external-link-line"></i> Demo</a>
+              </div>
+            </div>
+          </div>
+
         </div>
+        <p class="more_projects"><a href="https://github.com/felixjhonata?tab=repositories" target="_blank">See more on GitHub...</a></p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact_container">
+        <h1 class="title">GET IN TOUCH</h1>
+        <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, my inbox is always open!</p>
+        <a href="mailto:your.email@example.com" class="btn_primary btn_large">Say Hello</a>
       </div>
     </section>
 
