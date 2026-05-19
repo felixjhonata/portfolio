@@ -1,30 +1,31 @@
 # Felix Jhonata - Portfolio Website
 
-Welcome to my portfolio website! This site is designed to give recruiters and potential collaborators an overview of who I am and the projects I’ve worked on. Feel free to explore the site and reach out if you’d like to connect!
+Welcome to my portfolio website! This site is designed to give recruiters and potential collaborators a comprehensive overview of my skills, education, and the projects I’ve built.
 
 ## Website URL
 You can view the live site here: [https://felixjhonata.github.io/Portfolio/](https://felixjhonata.github.io/Portfolio/)
 
 ## Purpose
-This portfolio serves as a platform for showcasing my skills and experience, primarily focusing on the projects I’ve built. It also provides an easy way for recruiters to download my resume and connect with me via my social media profiles.
+This portfolio serves as a professional platform for showcasing my technical skills and experience in frontend and mobile development. It is optimized for recruiters, providing an easy-to-scan layout, direct access to project code and live demos, and frictionless contact methods.
 
 ## Features
-- **About Me:** A brief introduction about who I am and what I do.
-- **Projects Section:** Highlights of my key projects, each with a description and relevant details.
-- **Contact Information:** Social media links for GitHub and LinkedIn.
-- **Download Resume/CV:** A button allowing recruiters to download my resume directly from the site (coming soon).
+- **Modern UI/UX:** Fully responsive CSS Grid layout with a glassmorphism sticky navigation bar and premium hover overlays.
+- **Hero & About Me:** A brief, impact-driven introduction with a prominent button to download my CV and quick links to my social profiles.
+- **Skills & Tools Section:** A scannable visual grid highlighting my technical stack (HTML, CSS, JavaScript, React JS, Mobile Dev, Git, CLI, etc.).
+- **Education Section:** Details of my academic background, degree program, and expected graduation.
+- **Enhanced Projects Showcase:** Responsive project cards featuring brief descriptions, technology badges, and dual links to view both the GitHub Code and the Live Demo.
+- **Contact Section:** A dedicated Call-to-Action section making it incredibly easy for recruiters and collaborators to reach out to me via email.
 
 ## Technologies Used
-- **HTML**
-- **CSS**
+- **HTML5** (Semantic structure)
+- **CSS3** (Custom properties, CSS Grid, Flexbox, UI animations, styling)
+- **RemixIcon** (Scalable vector icons)
 
-## Social Media
+## Social Media & Contact
 - **GitHub:** [https://github.com/felixjhonata](https://github.com/felixjhonata)
 - **LinkedIn:** [https://www.linkedin.com/in/felix-jhonata-97b3492b6/](https://www.linkedin.com/in/felix-jhonata-97b3492b6/)
 
 ## Future Enhancements
-- **Resume Download Button:** A feature to allow recruiters to download my resume directly from the site.
-- Additional projects and updates to keep the portfolio current.
-
-## Contact
-Feel free to reach out to me through my social media!
+- Add active links to my Resume/CV document.
+- Continuously add new projects and update live demo links.
+- Expand the Education section with future internships or professional work experience.
