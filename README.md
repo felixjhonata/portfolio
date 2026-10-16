@@ -3,7 +3,7 @@
 Welcome to my portfolio website! This site is designed to give recruiters and potential collaborators a comprehensive overview of my skills, education, and the projects I’ve built.
 
 ## Website URL
-You can view the live site here: [https://felixjhonata.github.io/Portfolio/](https://felixjhonata.github.io/Portfolio/)
+You can view the live site here: [https://felixjhonata.github.io/portfolio/](https://felixjhonata.github.io/portfolio/)
 
 ## Purpose
 This portfolio serves as a professional platform for showcasing my technical skills and experience in frontend and mobile development. It is optimized for recruiters, providing an easy-to-scan layout, direct access to project code and live demos, and frictionless contact methods.
@@ -24,8 +24,3 @@ This portfolio serves as a professional platform for showcasing my technical ski
 ## Social Media & Contact
 - **GitHub:** [https://github.com/felixjhonata](https://github.com/felixjhonata)
 - **LinkedIn:** [https://www.linkedin.com/in/felix-jhonata-97b3492b6/](https://www.linkedin.com/in/felix-jhonata-97b3492b6/)
-
-## Future Enhancements
-- Add active links to my Resume/CV document.
-- Continuously add new projects and update live demo links.
-- Expand the Education section with future internships or professional work experience.
