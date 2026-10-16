@@ -83,6 +83,18 @@
             <i class="ri-github-fill"></i>
             <span>Git & GitHub</span>
           </div>
+          <div class="skill_item">
+            <i class="ri-terminal-box-fill"></i>
+            <span>Go</span>
+          </div>
+          <div class="skill_item">
+            <i class="ri-server-fill"></i>
+            <span>Gin</span>
+          </div>
+          <div class="skill_item">
+            <i class="ri-database-fill"></i>
+            <span>PostgreSQL</span>
+          </div>
         </div>
       </div>
     </section>
@@ -93,7 +105,7 @@
         <div class="education_card">
           <div class="edu_header">
             <h3>Bina Nusantara University</h3>
-            <span class="edu_date">Expected 2026</span>
+            <span class="edu_date">May 2026</span>
           </div>
           <p class="edu_degree">Bachelor's Degree in Computer Science</p>
           <p class="edu_desc">Focused on building a strong foundation in software engineering, algorithms, and clean architecture. Passionate about applying industry best practices to develop scalable, high-quality applications. Beyond academics, I actively contribute to student organizations to hone my leadership and collaborative skills.</p>
@@ -105,24 +117,52 @@
       <div class="projects_container">
         <h1 class="title">PROJECTS</h1>
         <div class="project_cards">
-          
+
           <div class="project_card">
             <div class="project_image">
-              <img src="asset/trackney_thumbnail.png" alt="Trackney Thumbnail">
+              <img src="asset/to-do-list-backend-thumbnail.jpg" alt="To Do List Backend Thumbnail">
             </div>
             <div class="project_info">
-              <h3>Trackney</h3>
-              <p>Stands for Track and Money, an application designed to help users track their expenses and income.</p>
+              <h3>To Do List Backend</h3>
+              <p>A Go backend server built with Gin that allows clients to add, edit, and delete to do items stored on a PostgreSQL database.</p>
               <div class="tech_stack">
-                <span>Jetpack Compose</span><span>Room</span><span>Kotlin</span>
+                <span>Go</span><span>Gin</span><span>pgxpool</span><span>godotenv</span><span>PostgreSQL</span>
               </div>
               <div class="project_links">
-                <a href="https://github.com/felixjhonata/trackney" target="_blank" class="btn_outline"><i class="ri-github-fill"></i> Code</a>
-                <a href="#" target="_blank" class="btn_primary btn_small"><i class="ri-external-link-line"></i> Download</a>
+                <a href="https://github.com/felixjhonata/go-to-do-list-backend" target="_blank" class="btn_outline"><i class="ri-github-fill"></i> Code</a>
               </div>
             </div>
           </div>
 
+          <div class="project_card">
+            <div class="project_image">
+              <img src="asset/moneta-thumbnail.jpg" alt="Moneta Thumbnail">
+            </div>
+            <div class="project_info">
+              <h3>Moneta</h3>
+              <p>An Android expense tracker app built with Kotlin and Jetpack Compose that stores data locally using SQLite.</p>
+              <div class="tech_stack">
+                <span>Kotlin</span><span>Jetpack Compose</span><span>SQLite</span><span>Navigation 3</span><span>MVVM</span><span>Hilt</span><span>Room</span><span>Paging 3</span><span>Material 3</span>
+              </div>
+              <div class="project_links">
+                <a href="https://github.com/felixjhonata/moneta" target="_blank" class="btn_outline"><i class="ri-github-fill"></i> Code</a>
+                <button type="button" class="btn_primary btn_small" onclick="openMonetaModal()"><i class="ri-external-link-line"></i> Download</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project_card">
+            <div class="project_image">
+              <img src="asset/merchanta-thumbnail.jpg" alt="Merchanta Thumbnail">
+            </div>
+            <div class="project_info">
+              <h3>Merchanta</h3>
+              <p>An Android inventory tracker app built with Kotlin and Jetpack Compose that is connected to Supabase as the database server.</p>
+              <div class="tech_stack">
+                <span>Kotlin</span><span>Jetpack Compose</span><span>Supabase</span><span>Navigation 3</span><span>MVVM</span><span>Hilt</span><span>Material 3</span>
+              </div>
+            </div>
+          </div>
 
         </div>
         <p class="more_projects"><a href="https://github.com/felixjhonata?tab=repositories" target="_blank">See more on GitHub...</a></p>
@@ -156,6 +196,24 @@
         </div>
       </div>
     </footer>
+
+    <div id="moneta-modal" class="modal" aria-hidden="true">
+      <div class="modal_content" role="dialog" aria-modal="true" aria-labelledby="moneta-modal-title">
+        <button type="button" class="modal_close" onclick="closeMonetaModal()" aria-label="Close">&times;</button>
+        <h3 id="moneta-modal-title">Install Moneta — Closed Testing (Google Play)</h3>
+        <ol class="modal_steps">
+          <li>
+            Join the tester group: <strong>moneta-testers-01</strong> — use the same Google account you use on the Play Store, then wait a few minutes for access to propagate.<br />
+            <a href="https://groups.google.com/g/moneta-testers-01" target="_blank" class="btn_outline btn_small">Join tester group</a>
+          </li>
+          <li>
+            Install the app: <strong>Moneta on Google Play</strong> — open the link on your device while signed in with that same account, then tap Install.<br />
+            <a href="https://play.google.com/store/apps/details?id=com.felixj.moneta" target="_blank" class="btn_primary btn_small">Install on Google Play</a>
+          </li>
+        </ol>
+        <p class="modal_note">Stay in the group to keep receiving test updates. Leaving the group removes your access.</p>
+      </div>
+    </div>
   </body>
 
   <script>
@@ -163,5 +221,17 @@
       let checkBox = document.getElementById("check")
       checkBox.checked = false
     }
+    function openMonetaModal() {
+      document.getElementById("moneta-modal").classList.add("open")
+    }
+    function closeMonetaModal() {
+      document.getElementById("moneta-modal").classList.remove("open")
+    }
+    document.getElementById("moneta-modal").addEventListener("click", function (e) {
+      if (e.target === this) closeMonetaModal()
+    })
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeMonetaModal()
+    })
   </script>
 </html>
