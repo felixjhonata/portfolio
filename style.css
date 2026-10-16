@@ -551,6 +551,71 @@ footer .instagram {
   background-color: #C13584;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.modal.open {
+  display: flex;
+}
+
+.modal_content {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  padding: 2rem;
+}
+
+.modal_content h3 {
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  padding-right: 2rem;
+}
+
+.modal_close {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--text-light);
+  cursor: pointer;
+}
+
+.modal_close:hover {
+  color: var(--text-dark);
+}
+
+.modal_steps {
+  padding-left: 1.25rem;
+  color: var(--text-dark);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.modal_steps .btn_outline,
+.modal_steps .btn_primary {
+  margin-top: 0.5rem;
+}
+
+.modal_note {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
 @media (width < 750px) {
   nav .checkbox {
     display: block;
